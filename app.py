@@ -9,6 +9,13 @@ from datetime import datetime, timedelta
 # ============================================
 st.set_page_config(page_title="DRY2LIFE - Bio-Digital Intelligence", layout="wide")
 
+with st.expander("📡 محاكاة أجهزة الاستشعار (IoT Simulation)"):
+    col1, col2 = st.columns(2)
+    with col1:
+        st.video("https://your-link.com/video1.mp4")  # أو استخدم ملف محلي
+    with col2:
+        st.video("https://your-link.com/video2.mp4")
+
 # Custom CSS for better design
 st.markdown("""
 <style>
