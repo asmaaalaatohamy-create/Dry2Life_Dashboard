@@ -9,12 +9,15 @@ from datetime import datetime, timedelta
 # ============================================
 st.set_page_config(page_title="DRY2LIFE - Bio-Digital Intelligence", layout="wide")
 
-with st.expander("📡 محاكاة أجهزة الاستشعار (IoT Simulation)"):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.video("https://your-link.com/video1.mp4")  # أو استخدم ملف محلي
-    with col2:
-        st.video("https://your-link.com/video2.mp4")
+# ============================================
+# IoT Simulation Video
+# ============================================
+st.markdown("---")
+st.markdown("## 🎥 IoT Device Simulation - Real-time Monitoring")
+
+with st.expander("📡 Click to watch IoT sensors simulation", expanded=True):
+    st.video("iot_simulation.mp4")
+    st.caption("Simulation of sensor readings (Temperature - Humidity - Salinity) sent from the field")
 
 # Custom CSS for better design
 st.markdown("""
